@@ -1,0 +1,37 @@
+.Prompt {
+  margin-right: 0.5rem;
+}
+
+.CommandLine {
+  display: flex;
+  margin-bottom: 0.25rem;
+}
+
+.ResultArea {
+  display: flex;
+  margin-bottom: 0.25rem;
+}
+
+.ResultArea a {
+  margin-right: 0.5rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@keyframes blink-cursor {
+  0%,
+  50% {
+    background-color: #000;
+  }
+
+  50%,
+  100% {
+    background-color: #fff;
+  }
+}
