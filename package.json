@@ -13,6 +13,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.0.40",
     "@types/react-dom": "^16.0.4",
+    "patch-package": "^6.2.2",
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^10.1.0",
     "stylelint-config-prettier": "^5.2.0",
@@ -22,16 +23,15 @@
     "typescript": "^3.5.2"
   },
   "scripts": {
+    "postinstall": "patch-package",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-
     "lint": "yarn run tslint && yarn run prettier-stylelint && yarn run stylelint",
     "prettier-tslint": "prettier-tslint fix '**/*.ts{,x}'",
     "tslint": "tslint -p tsconfig.json -c tslint.json --fix 'src/**/*.ts{,x}'",
     "prettier-stylelint": "prettier-stylelint -q --write 'src/**/*.{,s}css'",
     "stylelint": "stylelint 'src/**/*.css' --fix",
-    
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "stylelint-check": "stylelint-config-prettier-check"
   }

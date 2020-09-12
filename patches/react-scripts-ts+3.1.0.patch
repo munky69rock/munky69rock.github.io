@@ -1,0 +1,31 @@
+diff --git a/node_modules/react-scripts-ts/config/paths.js b/node_modules/react-scripts-ts/config/paths.js
+index cc6891d..9d67935 100644
+--- a/node_modules/react-scripts-ts/config/paths.js
++++ b/node_modules/react-scripts-ts/config/paths.js
+@@ -49,7 +49,7 @@ function getServedPath(appPackageJson) {
+ // config after eject: we're in ./config/
+ module.exports = {
+   dotenv: resolveApp('.env'),
+-  appBuild: resolveApp('build'),
++  appBuild: resolveApp('docs'),
+   appPublic: resolveApp('public'),
+   appHtml: resolveApp('public/index.html'),
+   appIndexJs: resolveApp('src/index.tsx'),
+@@ -72,7 +72,7 @@ const resolveOwn = relativePath => path.resolve(__dirname, '..', relativePath);
+ module.exports = {
+   dotenv: resolveApp('.env'),
+   appPath: resolveApp('.'),
+-  appBuild: resolveApp('build'),
++  appBuild: resolveApp('docs'),
+   appPublic: resolveApp('public'),
+   appHtml: resolveApp('public/index.html'),
+   appIndexJs: resolveApp('src/index.tsx'),
+@@ -105,7 +105,7 @@ if (
+   module.exports = {
+     dotenv: resolveOwn('template/.env'),
+     appPath: resolveApp('.'),
+-    appBuild: resolveOwn('../../build'),
++    appBuild: resolveOwn('../../docs'),
+     appPublic: resolveOwn('template/public'),
+     appHtml: resolveOwn('template/public/index.html'),
+     appIndexJs: resolveOwn('template/src/index.tsx'),
